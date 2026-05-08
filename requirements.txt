@@ -1,0 +1,8 @@
+pandas 
+numpy
+apache-airflow-providers-postgres
+psycopg2-binary
+psycopg2
+scikit-learn
+imbalanced-learn
+redis
