@@ -26,7 +26,7 @@ class RedisFeatureStore:
             batch_features[entity_id]=self.get_features(entity_id)
         return batch_features
     
-    def get_all_entities(self):
+    def get_all_entity_ids(self):
         keys=self.client.keys("entity:*:features")
         entity_ids=[key.split(":")[1] for key in keys]
         return entity_ids
