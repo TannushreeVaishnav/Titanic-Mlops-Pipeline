@@ -4,7 +4,7 @@
 
 ---
 
-## Disclaimer
+## Note
 
 Don't skip this just because of the dataset title. The **Titanic dataset is just a vehicle** — the real focus is the MLOps infrastructure built around it:
 
@@ -84,18 +84,18 @@ titanic-mlops/
 │           └── model.pkl
 ├── data/
 │   └── titanic.csv
-├── dags/                          # Airflow DAGs
+├── dags/                          
 │   └── titanic_etl_dag.py
-├── notebooks/                     # Jupyter exploration & testing
+├── notebooks/                     
 ├── src/
-│   ├── feature_store.py           # RedisFeatureStore class
+│   ├── feature_store.py           
 │   ├── logger.py
 │   └── ...
-├── static/                        # Flask static assets
+├── static/                        
 ├── templates/
-│   └── index.html                 # Frontend UI
-├── application.py                 # Main Flask app (drift + prediction + metrics)
-├── docker-compose.yml             # PostgreSQL + Redis containers
+│   └── index.html                 
+├── application.py                 
+├── docker-compose.yml             
 ├── requirements.txt
 └── README.md
 ```
@@ -294,13 +294,13 @@ The Titanic dataset used in this project is publicly available.
 
 ---
 
-## Screenshots
-
-| Component | Preview |
-|---|---|
-| Prediction UI — Survived | Green result panel with feature importance |![alt text](<Screenshot 2026-05-09 095034.png>)
-| Prediction UI — Not Survived | Dark result panel |![alt text](<Screenshot 2026-05-09 091524.png>)
-| Grafana Dashboard | Prediction count, drift events, stat panels |![alt text](<Screenshot 2026-05-09 112501.png>)  ![alt text](<Screenshot 2026-05-09 104730.png>)
+## Output
+### Prediction UI — Survived
+![Prediction UI-Survived](<Screenshot 2026-05-09 095034.png>)
+### Prediction UI — Not Survived
+![Not Survived](<Screenshot 2026-05-09 091524.png>)
+Grafana Dashboard
+![Grafana](<Screenshot 2026-05-09 112501.png>)  
 
 ---
 
